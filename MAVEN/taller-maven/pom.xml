@@ -14,5 +14,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+	  <groupId>joda-time</groupId>
+	  <artifactId>joda-time</artifactId>
+	  <version>${jodaTime.version}</version>
+	</dependency>
   </dependencies>
+  
+   <properties>
+   	<jodaTime.version>2.10.2</jodaTime.version>
+   </properties>
+   
 </project>
