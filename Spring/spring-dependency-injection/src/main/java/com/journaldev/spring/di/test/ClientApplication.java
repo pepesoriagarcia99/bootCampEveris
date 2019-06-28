@@ -14,7 +14,7 @@ public class ClientApplication {
 		
 		app.processMessage("Hi Pankaj", "pankaj@abc.com");
 		
-		//close the context
+		
 		context.close();
 	}
 
