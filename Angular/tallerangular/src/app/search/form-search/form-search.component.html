@@ -1,0 +1,12 @@
+<form [labelButton]="labelBuscar" [placeholder]="labelPlaceHolder" (searchEvent)="search($event)">
+  <input placeholder="{{placeholder}}" [(ngModel)]="query" type="text" required>
+  <input type="submit" value="{{labelButton}}" (click)="search()">
+</form>
+
+
+
+<ul>
+  <li *ngFor="let owner of owners; let i = index;">
+    {{owner.id}}
+  </li>
+</ul>

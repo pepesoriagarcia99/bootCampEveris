@@ -42,6 +42,17 @@ public class BaseDeDatosService {
 		storage.put(newId, art);
 		return newId;
 	}
+	public Articulo findByDescripcion(String descripcion) {
+		Articulo a = new Articulo();
+		
+		for(int i = 0; i < storage.size(); i++) {
+			if ( storage.get(i).getDescripcion().equals(descripcion)) {
+				a = storage.get(i);
+			}
+		}
+			
+		return a;
+	}
 }
 
 
